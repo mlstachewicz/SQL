@@ -69,7 +69,7 @@ ELSE "no work-life balance" END AS work_life_balance
 FROM fortune_companies
 WHERE industry="Technology";
 
-# Determine which industries have an average employee tenure of at least 6 years and what their avaerage employee tenure is.
+# Determine which industries have an average employee tenure of at least 6 years and what their average employee tenure is.
 SELECT industry, ROUND(AVG(avg_employee_tenure)) AS avg_years_of_tenure
 FROM fortune_companies
 GROUP BY industry
